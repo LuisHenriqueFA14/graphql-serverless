@@ -26,7 +26,7 @@ If you want to run the app offline, run this command:
 ```
 npm run start
 ```
-And the app will be running on `http:localhost:PORT/graphql`.
+And the app will be running on `http://localhost:PORT/graphql`.
 
 <br/>
 
