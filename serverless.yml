@@ -1,0 +1,21 @@
+service: graphql-serverless
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  lambdaHashingVersion: 20201221
+  stage: dev
+
+plugins:
+  - serverless-offline
+
+functions:
+  graphql:
+    handler: handler.graphqlHandler
+    events:
+      - httpApi:
+          path: /graphql
+          method: any
+          cors: true
